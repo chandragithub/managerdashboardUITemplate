@@ -1,0 +1,67 @@
+<div class="client-information-container padding-1">
+  <form  (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-container col-md-12 d-inline-block">
+      <div class="field-container">
+        <p class="d-inline-block title"> Client Information </p>
+        <div class="row">
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> PPMC Number </label>
+            <input type="text" class="form-control"  placeholder="Enter PPMC Number">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+              <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+            </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> Client Name </label>
+            <input type="text" class="form-control" placeholder="Enter Client Name">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                        <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                      </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> Carrier </label>
+            <input type="text" class="form-control" placeholder="Enter Carrier">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                        <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                      </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> Point of Contact </label>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="First Name">
+                <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                    <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                  </div> -->
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Last Name">
+                <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                                <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                              </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Client Email ID </label>
+            <input type="text" class="form-control" placeholder="Enter Client Email">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                              </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Phone Number </label>
+            <input type="text" class="form-control" placeholder="Enter Phone Number">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                            <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                          </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container padding-1">
+      <button type="button" class="btn btn-primary"> Submit </button>
+    </div>
+  </form>
+</div>
+
