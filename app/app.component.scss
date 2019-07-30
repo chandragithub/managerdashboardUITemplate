@@ -1,0 +1,19 @@
+.side-panel {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.route-panel {
+    margin-left: 90px;
+}
+
+.icon-container {
+    padding: 20px 10px 20px 20px;
+    text-align: center;
+    .material-icons {
+        font-size: 40px;
+        cursor: pointer;
+    }
+}

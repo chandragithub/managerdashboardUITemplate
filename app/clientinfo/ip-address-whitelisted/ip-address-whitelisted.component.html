@@ -1,0 +1,60 @@
+<div class="client-information-container padding-1 margin-top-1 margin-bottom-1">
+  <form (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-container col-md-12 d-inline-block">
+      <div class="field-container">
+        <p class="d-inline-block title"> IP Address Whitelisted </p>
+        <div class="row">
+          <div class="col-md-12 d-inline-block">
+            <label class="required"> Region </label>
+            <select class="form-control" placeholder="Enter Region">
+              <option>UAT</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+              <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+            </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> Ip Address </label>
+            <input type="text" class="form-control" placeholder="Enter Ip Address">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                        <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                      </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="custom-file-label" for="customFile">PGP Encryption</label>
+            <input type="file" class="custom-file-input" id="customFile">
+          </div>
+          <div class="btn-container padding-1">
+            <button type="button" class="btn btn-primary"> Upload </button>
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> OutBound </label>
+            <select class="form-control" placeholder="Enter OutBound">
+              <option>YES</option>
+              <option>NO</option>
+            </select>
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                        <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                      </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> InBound </label>
+            <select class="form-control" placeholder="Enter InBound">
+              <option>YES</option>
+              <option>NO</option>
+            </select>
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container padding-1">
+      <button type="button" class="btn btn-primary"> Submit </button>
+    </div>
+  </form>
+</div>

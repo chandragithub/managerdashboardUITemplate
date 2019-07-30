@@ -1,0 +1,100 @@
+<div class="client-information-container padding-1">
+  <form (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-container col-md-12 d-inline-block">
+      <div class="field-container">
+        <p class="d-inline-block title"> Connection Details </p>
+        <div class="row">
+          <div class="col-md-12 d-inline-block">
+            <label class="required"> Connection Type </label>
+            <select class="form-control" placeholder="Enter Connection Type">
+              <option>OutBound</option>
+              <option>InBound</option>
+            </select>
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+              <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+            </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> Existing Connection </label>
+            <select class="form-control" placeholder="Enter Existing Connection">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                        <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                      </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="required"> XCID </label>
+            <input type="text" class="form-control" placeholder="Enter XCID">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                        <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                      </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Authentication </label>
+            <input type="text" class="form-control" placeholder="Enter Authentication">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                          <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                        </div> -->
+          </div>
+          <div class="col-md-12 d-inline-block margin-top-1">
+            <label class="custom-file-label" for="customFile"></label>
+            <input type="file" class="custom-file-input" id="customFile">
+          </div>
+          <div class="btn-container padding-1">
+            <button type="button" class="btn btn-primary"> Upload </button>
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Buld Feed </label>
+            <select class="form-control" placeholder="Enter Bulk Feed">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                          <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                        </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Host Name </label>
+            <input type="text" class="form-control" placeholder="Enter Host Name">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                          <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                        </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Port </label>
+            <input type="text" class="form-control" placeholder="Enter Port">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                                    <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                                  </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Directory </label>
+            <input type="text" class="form-control" placeholder="Enter Directory">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                                    <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                                  </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Username </label>
+            <input type="text" class="form-control" placeholder="Enter Username">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                                    <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                                  </div> -->
+          </div>
+          <div class="col-md-12 margin-top-1">
+            <label class="required"> Password </label>
+            <input type="text" class="form-control" placeholder="Enter Password">
+            <!-- <div *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+                                                                    <div *ngIf="f.name.errors?.required">{{validationMessages.name.required}}</div>
+                                                                  </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container padding-1">
+      <button type="button" class="btn btn-primary"> Submit </button>
+    </div>
+  </form>
+</div>
